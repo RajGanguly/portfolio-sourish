@@ -41,7 +41,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Currently building an open studio named Studio Awaz!",
-    description: "Location",
+    description: "Find it in maps",
     className: "md:col-span-4 md:row-span-4",
     imgClassName: "w-full h-full",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -51,12 +51,12 @@ export const gridItems = [
 
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "If you need help with your equipments, rigs and setup, let me know. I can help you with that.",
     description: "",
     className: "lg:col-span-6 md:col-span-3 md:row-span-2 lg:min-h-[30vh]",
-    imgClassName: "",
+    imgClassName: "w-full h-full object-cover object-center",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
+    img: "/rig_setup.jpeg",
     spareImg: "",
   },
 ];

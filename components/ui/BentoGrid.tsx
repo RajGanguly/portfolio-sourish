@@ -113,12 +113,6 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
-          // add background animation , remove the p tag
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
-        )}
 
         <div
           className={cn(
@@ -174,29 +168,6 @@ export const BentoGridItem = ({
                   </span>
                 ))}
               </div>
-            </div>
-          )}
-          {id === 6 && (
-            <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                <Lottie
-                  options={defaultOptions}
-                  height={200}
-                  width={400}
-                  eventListeners={[]}
-                />
-              </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
             </div>
           )}
         </div>
