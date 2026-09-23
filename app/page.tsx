@@ -5,6 +5,7 @@ import { navItems } from "@/data";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Music from "@/components/Music";
+import StudioAwaz from "@/components/StudioAwaz";
 import Journey from "@/components/Journey";
 import ProfileMark from "@/components/ProfileMark";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
@@ -19,6 +20,7 @@ const Home = () => {
         <Grid />
         <Music />
         <Journey />
+        <StudioAwaz />
       </div>
     </main>
   );

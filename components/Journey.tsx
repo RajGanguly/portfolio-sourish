@@ -86,9 +86,8 @@ const Journey = () => {
 
                 <div className="absolute bottom-0 left-0 right-0 z-20 flex items-end justify-between p-3 opacity-0 transition duration-300 group-hover:opacity-100">
                   <span className="text-xs font-medium uppercase tracking-[0.24em] text-white/75">
-                    Memory
                   </span>
-                  <span className="text-xs text-fuchsia-200">0{index + 1}</span>
+                  <span className="text-xs text-fuchsia-200"></span>
                 </div>
               </div>
             ))}
