@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const journeyImages = [
   "/journey/IMG-20260904-WA0012.jpg",
   "/journey/IMG-20260904-WA0014.jpg",
@@ -74,9 +76,11 @@ const Journey = () => {
               >
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-black/5 to-transparent opacity-80 transition duration-300 group-hover:opacity-90" />
 
-                <img
+                <Image
                   src={image}
                   alt={`Journey memory ${index + 1}`}
+                  width={900}
+                  height={1200}
                   className="journey-image h-full min-h-[160px] w-full object-cover transition duration-500 ease-out group-hover:scale-110 group-hover:brightness-110"
                 />
 
