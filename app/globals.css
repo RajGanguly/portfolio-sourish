@@ -98,4 +98,12 @@
   .animate-music-scroll {
     animation: music-scroll 32s linear infinite;
   }
+
+  .journey-image {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 0 28px rgba(168, 85, 247, 0.18);
+  }
+
+  .journey-image:hover {
+    box-shadow: 0 0 0 1px rgba(192, 132, 252, 0.35), 0 0 32px rgba(34, 211, 238, 0.2), 0 0 52px rgba(168, 85, 247, 0.28);
+  }
 }

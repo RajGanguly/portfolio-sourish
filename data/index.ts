@@ -1,8 +1,9 @@
 export const navItems = [
   { name: "Home", link: "#about" },
   { name: "About", link: "#projects" },
-  { name: "Music", link: "#" },
-  { name: "Studio Awaz", link: "#" },
+  { name: "Music", link: "#music" },
+  { name: "Journey", link: "#journey" },
+  { name: "Studio Awaz", link: "#studio_awaz" },
   { name: "Contact", link: "#" }
 ];
 
