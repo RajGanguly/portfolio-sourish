@@ -7,6 +7,8 @@ import Grid from "@/components/Grid";
 import Music from "@/components/Music";
 import StudioAwaz from "@/components/StudioAwaz";
 import Journey from "@/components/Journey";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import ProfileMark from "@/components/ProfileMark";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -21,7 +23,9 @@ const Home = () => {
         <Music />
         <Journey />
         <StudioAwaz />
+        <Contact />
       </div>
+      <Footer />
     </main>
   );
 };

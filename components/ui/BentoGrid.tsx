@@ -77,13 +77,10 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
         background: "rgb(56, 30, 143)",
         backgroundColor:
           "linear-gradient(90deg, rgb(56, 30, 143, 1) 0%, rgba(12,14,35,1) 100%)",
@@ -129,12 +126,20 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
+          {id === 5 ? (
+            <a
+              href="https://www.google.com/maps/dir//PARNASREE+GREEN,+188%2F3,+Parnasree+Extension,+Kolkata,+Maheshtala,+West+Bengal+700060/@22.5042132,88.2944658,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3a027a247a0c62e9:0x8ef67c4498fcfe02!2m2!1d88.2996009!2d22.5066554!3e0?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10 underline decoration-white/60 underline-offset-4 transition-colors hover:text-white"
+            >
+              {description}
+            </a>
+          ) : (
+            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+              {description}
+            </div>
+          )}
           <div
             className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10`}
           >
@@ -173,15 +178,10 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
               <div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie
                   options={defaultOptions}
                   height={200}

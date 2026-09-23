@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div id="home" className="pb-20 pt-36">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -60,7 +60,7 @@ const Hero = () => {
             className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
             />
 
-          <a href="#about">
+          <a href="#">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

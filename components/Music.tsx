@@ -94,6 +94,7 @@ const Music = () => {
                       alt={video.title || "Underground Authority video"}
                       width={1280}
                       height={720}
+                      unoptimized
                       className="h-[200px] w-full object-cover transition duration-500 group-hover/card:scale-110 group-hover/card:brightness-110 sm:h-[240px]"
                     />
                   )}

@@ -1,10 +1,10 @@
 export const navItems = [
-  { name: "Home", link: "#about" },
-  { name: "About", link: "#projects" },
+  { name: "Home", link: "#home" },
+  { name: "About", link: "#about" },
   { name: "Music", link: "#music" },
   { name: "Journey", link: "#journey" },
   { name: "Studio Awaz", link: "#studio_awaz" },
-  { name: "Contact", link: "#" }
+  { name: "Contact", link: "#contact" }
 ];
 
 export const gridItems = [
@@ -41,8 +41,8 @@ export const gridItems = [
   {
     id: 5,
     title: "Currently building an open studio named Studio Awaz!",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
+    description: "Location",
+    className: "md:col-span-4 md:row-span-4",
     imgClassName: "w-full h-full",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/studio_awaz_main.jpg",
